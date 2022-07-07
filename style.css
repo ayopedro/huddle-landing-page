@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-inline: 2rem;
+  background: url(./images/bg-mobile.svg),
+    linear-gradient(var(--violet), var(--violet));
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  padding-block: 30px;
+}
+.header .logo {
+  width: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.main-image {
+  margin-block: 40px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-block: 20px;
+}
+.main-message {
+  margin-block: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--violet);
+  padding: 0.7rem 5rem;
+  margin-block: 40px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: var(--soft-magenta);
+  color: #fff;
+}
+
+.social-icons {
+  margin-block: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  aspect-ratio: 1;
+  width: 40px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url(./images/bg-desktop.svg),
+      linear-gradient(var(--violet), var(--violet));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    padding-right: 30px;
+  }
+
+  .main-content {
+    text-align: left;
+    padding-top: 50px;
+  }
+
+  .main-message {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .social-icons {
+    justify-content: end;
+    margin-block: 150px 0;
+  }
+}
