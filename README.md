@@ -6,5 +6,5 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/ayopedro/huddle-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Website](https://ayopedro.github.io/huddle-landing-page/)
 
